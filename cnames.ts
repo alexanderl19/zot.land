@@ -37,8 +37,8 @@ import { CNAMEs } from "./mod/mod.ts";
 // enjoy your zot.land URL <3
 // ~ @alexanderl19
 
-export default <CNAMEs>{
+export default <CNAMEs> {
   "@": {
     target: "alexanderl19.github.io/zot.land",
-  }
+  },
 };
