@@ -248,4 +248,6 @@ export default <RestrictedNames> [
   /^ww(1|2|3|42)$/,
   /^www(1|2|3|42)$/,
   /^xml$/,
+  /^zot$/,
+  /^zottools$/,
 ];

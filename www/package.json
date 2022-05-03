@@ -1,10 +1,10 @@
 {
-  "name": "mod.land",
+  "name": "zot.land",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/denosaurs/mod.land.git"
+    "url": "https://github.com/alexanderl19/zot.land.git"
   },
   "scripts": {
     "dev": "next dev",

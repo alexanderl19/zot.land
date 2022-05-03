@@ -1,5 +1,5 @@
 ---
-title: mod.land
+title: zot.land
 ---
 
 Taking inspiration from the great [js.org][js-org] project we at
@@ -21,35 +21,35 @@ and deployed with GitHub Actions.
 
 ### Step 2 - Choose your subdomain
 
-Now you should determine your mod.land subdomain: either choose your username
+Now you should determine your zot.land subdomain: either choose your username
 or the name of your repository, according to the existing GitHub Pages URL
-(for http://foo.github.io/bar, either "foo.mod.land" or "bar.mod.land" would
+(for http://foo.github.io/bar, either "foo.zot.land" or "bar.zot.land" would
 be possible).
 
 ### Step 3 - Add a CNAME to your repo
 
 Add a file named "CNAME" to your root directory of your repository (or in the
 "gh-pages" branch, if you use that) with a single line matching the domain you
-have chosen (e.g. "foo.mod.land" without quotes). For more info about this step
+have chosen (e.g. "foo.zot.land" without quotes). For more info about this step
 you can follow the [Custom URLs][gh-custom-urls] section at GitHub Pages Help.
 
 ```diff:your-repo/CNAME
-+ foo.mod.land
++ foo.zot.land
 ```
 
 ### Step 4 - Claim your subdomain
 
 To finish the procedure, make a pull request in our [GitHub repository][repo]
-that adds your subdomain to the list of existing mod.land domains. Your
+that adds your subdomain to the list of existing zot.land domains. Your
 new URL should go live within 24 hours (keep an eye on your pull request in
 case of a naming conflict or a question from our side).
 
-```diff:mod.land/cnames.ts
+```diff:zot.land/cnames.ts
 import { CNAMEs } from "./mod/types.ts";
 
 export default <CNAMEs> {
   "@": {
-    target: "denosaurs.github.io/mod.land",
+    target: "alexanderl19.github.io/zot.land",
   },
 + "foo": {
 +   target: "foo.github.io/bar",
@@ -60,7 +60,7 @@ export default <CNAMEs> {
 ## For advanced users
 
 Our subdomain are _CNAME_ records which map one domain name to another. You can
-actually point your mod.land to many different services like [Vercel][vercel]
+actually point your zot.land to many different services like [Vercel][vercel]
 or [Netlify][netlify].
 
 ## Important
@@ -77,7 +77,7 @@ possible. Many thanks!
 [js-org]: https://js.org
 [gh-pages]: https://help.github.com/pages/
 [gh-custom-urls]: https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site
-[repo]: https://github.com/denosaurs/mod.land
+[repo]: https://github.com/alexanderl19/zot.land
 [vercel]: https://vercel.com
 [netlify]: https://netlify.com
 [cloudflare]: https://www.cloudflare.com

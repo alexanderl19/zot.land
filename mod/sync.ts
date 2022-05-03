@@ -6,14 +6,14 @@ import dns from "./dns.ts";
 
 import { DomainRecord } from "./mod.ts";
 
-const DOMAIN = "mod.land";
+const DOMAIN = "zot.land";
 
 const logger = log.create("mod");
 
 if (import.meta.main) {
   await log.setup({ filter: "INFO" });
 
-  logger.info("mod.land CLI is running 🌟");
+  logger.info("zot.land CLI is running 🌟");
   logger.info("gathering CNAMEs from cloudflare api...");
   const registered = await dns.getCNAMEs();
   logger.warning(

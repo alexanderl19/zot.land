@@ -5,7 +5,7 @@ export default function Page(fm) {
     return (
       <>
         <Head>
-          <title>{fm.title ? fm.title : "mod.land"}</title>
+          <title>{fm.title ? fm.title : "zot.land"}</title>
         </Head>
         <main className="container markdown-wrapper">
           <section className="markdown">
