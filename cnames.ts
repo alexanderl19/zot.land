@@ -38,8 +38,12 @@ import { CNAMEs } from "./mod/mod.ts";
 // ~ @alexanderl19
 
 export default <CNAMEs> {
+  "@": {
+    target: "cname.vercel-dns.com",
+    proxied: false,
+  },
   "www": {
     target: "cname.vercel-dns.com",
-    proxied: false
+    proxied: false,
   },
 };
